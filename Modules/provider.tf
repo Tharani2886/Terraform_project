@@ -5,6 +5,14 @@ terraform {
       version = "~> 4.0"
     }
   }
+    backend "remote" {
+    hostname     = "Tharani.io" # Or your custom Scalr host if self-hosted
+    organization = "<Tharani>"
+
+    workspaces {
+      name = "terraform_project"
+    }
+  }
 }
 
 # Configure the AWS Provider
