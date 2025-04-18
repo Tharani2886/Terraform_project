@@ -1,0 +1,15 @@
+# Terraform directories
+.terraform/
+
+# Terraform binary (optional, if you downloaded it here)
+terraform.exe
+
+# Local values
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Sensitive files
+*.pem
+*.key
+*.env
