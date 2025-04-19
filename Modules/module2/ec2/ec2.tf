@@ -42,8 +42,8 @@ resource "aws_instance" "web_1" {
 # web server - 2
 
 resource "aws_instance" "web_2" {
-  ami           = "ami-065a492fef70f84b1"  # Replace with a valid AMI ID for your region
-  instance_type = "t2.micro"
+  ami           = var.my_ami  # Replace with a valid AMI ID for your region
+  instance_type = var.instance_type
   associate_public_ip_address = true     # Replace with your SSH key pair name
   subnet_id = var.public_subnet_2_ec2
   user_data = file("${path.module}/web-apps.sh")

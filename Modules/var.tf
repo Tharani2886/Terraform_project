@@ -1,4 +1,4 @@
-variable aws_region_output {
+variable aws_region_out {
     type     = string
     default   = "ap-southeast-1"
 }
@@ -103,4 +103,13 @@ variable alb_type_out {
     default   = "application"
     
 
+}
+
+
+output web_1_output {
+    value    = aws_instance.web_1.id
+}
+
+output web_2_output {
+    value    = aws_instance.web_2.id
 }

@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"db","Source":"./module3/db","Dir":"module3/db"},{"Key":"ec2","Source":"./module2/ec2","Dir":"module2/ec2"},{"Key":"elb","Source":"./module4/elb","Dir":"module4/elb"},{"Key":"vpc","Source":"./module1/vpc","Dir":"module1/vpc"}]}

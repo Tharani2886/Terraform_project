@@ -5,17 +5,19 @@ terraform {
       version = "~> 4.0"
     }
   }
-    backend "remote" {
-    hostname     = "Tharani.io" # Or your custom Scalr host if self-hosted
-    organization = "<Tharani>"
+
+  backend "remote" {
+    hostname     = "tharani.scalr.io"
+    organization = "env-v0opek607gfoqonha"
 
     workspaces {
-      name = "terraform_project"
+      name = "myworkspace"
     }
   }
+
 }
 
 # Configure the AWS Provider
 provider "aws" {
-  region = var.aws_region_output
+  region = var.aws_region_out
 }

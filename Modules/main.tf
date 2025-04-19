@@ -12,7 +12,6 @@ module "vpc" {
     pvt_sub_2 = var.pvt_sub_2_out
     pvt_avz_2 = var.pvt_avz_2_out
 
-
 }
 
 
